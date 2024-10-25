@@ -20,9 +20,7 @@ def unpublished():
 @app.get("/blog/{id}")
 def show(id : int):
     return {"data" : id}
-@app.get('/blog/{id}/comments')
-def comments(id, limit = 10):
-    return {"data" : {"1","2"}}
+
 
 class Blog(BaseModel):
     title : str
